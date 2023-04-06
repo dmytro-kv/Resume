@@ -1,0 +1,53 @@
+/* RESET STYLE */
+@import url(reset.css);
+/* ----------- */
+
+/* PAGE__MAIN STYLE */
+@import url(page__main.css);
+/* ----------- */
+
+/* PAGE__MAIN STYLE */
+@import url(page__aside.css);
+/* ----------- */
+
+body {
+  background: rgb(21, 20, 20);
+  font-size: 14px;
+}
+
+.wrapper {
+  overflow: clip;
+  max-width: 68.75rem;
+  background-color: #fff;
+  margin: 1.25rem auto;
+  border-radius: 20px;
+  box-shadow: -5px -5px 20px 10px #222121;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 66% auto;
+}
+.main,
+.aside {
+  min-height: 100vh;
+}
+
+.aside {
+  background-color: #1c2532;
+}
+
+a {
+  color: #ef7c17;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  .page {
+    grid-template-columns: 100%;
+    min-width: 0;
+  }
+}
